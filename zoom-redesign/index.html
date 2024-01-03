@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vite App</title>
+  </head>
+  <body class="font-sans">
+    <nav class="bg-white-800">
+        <div class="container mx-auto flex items-center py-2 px-5 border-b-2 border-b-slate-200 justify-between">
+            
+            <div class="text-white text-xl font-bold">
+                <img src="https://st2.zoom.us/static/6.3.17955/image/new/topNav/Zoom_logo.svg" alt="Zoom Logo" class="w-35" />
+            </div>
+
+            <div class="lg:hidden">
+                <a type="button" id="hid" class="text-white ml-2">
+                    <img src="hamburger-menu.svg" alt="" />
+                </a>
+            </div>
+
+            <div class="hidden lg:flex align-middle space-x-4">
+                <button type="button" class="hover:bg-blue-100 text-blue-600 font-bold py-2 px-4 rounded-full border border-blue-600">
+                    Kontakta säljavdelning
+                </button>
+                <button type="button" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                    Registrera dig gratis | Zoom
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="lg:hidden hidden bg-white-800">
+        <a href="#" class="block py-2 px-4 text-blue-600 font-bold">Kontakta säljavdelning</a>
+        <a href="#" class="block py-2 px-4 text-blue-600 font-bold">Registrera dig gratis | Zoom</a>
+    </div>
+
+    <section class="pt-5 md:flex justify-between">
+       
+        <div class="pl-4">
+            <h1 class="block text-6xl font-bold text-blue-700">
+                En platform för att komma i kontakt
+            </h1>
+            <p class="block mt-10 font-normal pr-4">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
+                velit commodi animi molestiae provident corrupti numquam rem fugit
+                quasi suscipit!
+            </p>
+            <button type="button" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded-full w-40 mt-4 mb-2">
+                Join
+            </button>
+        </div>
+
+        <img class="h-96" src="meetingpicture.png" alt="" />
+    </section>
+
+    <div class="container mx-auto p-8 bg-black">
+        <h2 class="text-4xl font-bold mb-4 text-white">
+            Gör dina möten enklare
+        </h2>
+        <p class="text-white mb-8">
+            Joina från överallt, med din dator, tablet, eller mobil telefon.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">HD Video</h3>
+                <p class="text-gray-700">
+                    Upplev kristallklara videosamtal, av hög kvalitet.
+                </p>
+                <img src="Zoom-Video-Settings-768x632.png" alt="" />
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Ljud</h3>
+                <p class="text-gray-700">
+                    Aktivera eller inaktivera din mikrofon för tydlig kommunikation.
+                </p>
+                <img src="zoom-9.png" alt="" />
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Skärmdelning</h3>
+                <p class="text-gray-700">dela din skärm med lätthet under möten.</p>
+                <img src="Sharecontent-c72b57a34a1f431e812b4d42846b6244.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <section class="bg-blue-500 p-5 h-96 flex flex-col items-center justify-center">
+        <h2 class="text-4xl font-bold mb-4 text-violet-50 text-center">
+            Redo att komma igång
+        </h2>
+        <div class="text-center">
+            <button type="button" class="bg-violet-500 hover:bg-violet-700 font-bold py-2 px-4 rounded text-white border border-white">
+                Registrera dig, det gratis
+            </button>
+            <button type="button" class="bg-white hover:bg-gray-200 font-bold py-2 px-4 rounded ml-2 mt-2">
+                Planer och priser
+            </button>
+        </div>
+    </section>
+
+    <script>
+      const mobileMenu = document.getElementById('mobile-menu');
+      const hamburgerButton = document.getElementById('hid');
+
+      hamburgerButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+      });
+  </script>
+      </body>
+    </html>
+  </body>
+</html>
